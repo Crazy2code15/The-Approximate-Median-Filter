@@ -1,0 +1,183 @@
+$date
+	Sat Jan 22 06:49:27 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 8 ! y [7:0] $end
+$var reg 8 " i0 [7:0] $end
+$var reg 8 # i1 [7:0] $end
+$var reg 8 $ i2 [7:0] $end
+$var reg 8 % i3 [7:0] $end
+$var reg 8 & i4 [7:0] $end
+$var reg 8 ' i5 [7:0] $end
+$var reg 8 ( i6 [7:0] $end
+$var reg 8 ) i7 [7:0] $end
+$var reg 8 * i8 [7:0] $end
+$var reg 2 + s [1:0] $end
+$scope module dut $end
+$var wire 8 , i0 [7:0] $end
+$var wire 8 - i1 [7:0] $end
+$var wire 8 . i2 [7:0] $end
+$var wire 8 / i3 [7:0] $end
+$var wire 8 0 i4 [7:0] $end
+$var wire 8 1 i5 [7:0] $end
+$var wire 8 2 i6 [7:0] $end
+$var wire 8 3 i7 [7:0] $end
+$var wire 8 4 i8 [7:0] $end
+$var wire 2 5 s [1:0] $end
+$var wire 8 6 y [7:0] $end
+$var wire 8 7 y10 [7:0] $end
+$var wire 8 8 y11 [7:0] $end
+$var wire 8 9 y12 [7:0] $end
+$var wire 8 : y13 [7:0] $end
+$var wire 8 ; y14 [7:0] $end
+$var wire 8 < y15 [7:0] $end
+$var wire 8 = y16 [7:0] $end
+$var wire 8 > y17 [7:0] $end
+$var wire 8 ? y9 [7:0] $end
+$scope module x1 $end
+$var wire 8 @ a [7:0] $end
+$var wire 8 A b [7:0] $end
+$var wire 8 B x [7:0] $end
+$upscope $end
+$scope module x2 $end
+$var wire 8 C a [7:0] $end
+$var wire 8 D b [7:0] $end
+$var wire 8 E x [7:0] $end
+$upscope $end
+$scope module x3 $end
+$var wire 8 F a [7:0] $end
+$var wire 8 G b [7:0] $end
+$var wire 8 H x [7:0] $end
+$upscope $end
+$scope module x4 $end
+$var wire 8 I a [7:0] $end
+$var wire 8 J b [7:0] $end
+$var wire 8 K x [7:0] $end
+$upscope $end
+$scope module x5 $end
+$var wire 8 L a [7:0] $end
+$var wire 8 M b [7:0] $end
+$var wire 8 N x [7:0] $end
+$upscope $end
+$scope module x6 $end
+$var wire 8 O a [7:0] $end
+$var wire 8 P b [7:0] $end
+$var wire 8 Q x [7:0] $end
+$upscope $end
+$scope module x7 $end
+$var wire 8 R a [7:0] $end
+$var wire 8 S b [7:0] $end
+$var wire 8 T x [7:0] $end
+$upscope $end
+$scope module x8 $end
+$var wire 8 U a [7:0] $end
+$var wire 8 V b [7:0] $end
+$var reg 8 W x [7:0] $end
+$upscope $end
+$scope module x9 $end
+$var wire 8 X a [7:0] $end
+$var wire 8 Y b [7:0] $end
+$var reg 8 Z x [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx Z
+bx Y
+b10001001 X
+bx W
+b10111000 V
+b111110 U
+bx T
+bx S
+b10111000 R
+bx Q
+bx P
+bx O
+bx N
+bx M
+b10010110 L
+bx K
+bx J
+b1101 I
+b10001001 H
+b10111000 G
+b10001001 F
+b10111000 E
+b100000 D
+b10111000 C
+b100000 B
+b1101 A
+b100000 @
+b100000 ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+b10111000 9
+bx 8
+b10001001 7
+bx 6
+b11 5
+b1101 4
+b10011 3
+b10111000 2
+b10000011 1
+b10001001 0
+b10010110 /
+b111110 .
+b100000 -
+b11001011 ,
+b11 +
+b1101 *
+b10011 )
+b10111000 (
+b10000011 '
+b10001001 &
+b10010110 %
+b111110 $
+b100000 #
+b11001011 "
+bx !
+$end
+#5
+b1xxx1xxx !
+b1xxx1xxx 6
+b1101 >
+b1101 N
+b1xxx1xxx <
+b1xxx1xxx T
+bx1xx1 =
+bx1xx1 Q
+b1101 ;
+b1101 K
+b1101 M
+b1101 P
+b1xxx1xx1 Z
+b1xxx1xx1 :
+b1xxx1xx1 O
+b1xxx1xx1 S
+b10111110 W
+b10111110 8
+b10111110 J
+b10111110 Y
+#10
+b10111000 !
+b10111000 6
+b10111000 <
+b10111000 T
+b1101 =
+b1101 Q
+b10111111 Z
+b10111111 :
+b10111111 O
+b10111111 S
