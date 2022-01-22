@@ -6,6 +6,7 @@ module tb;
   wire [7:0]y;
   cf dut(i0,i1,i2,i3,i4,i5,i6,i7,i8,s,y);
   initial begin
+    $dumpfile("dump.vcd"); $dumpvars;
     repeat(10)begin
       {i0,i1,i2,i3} = $random;
       {i4,i5,i6,i7} = $random;
