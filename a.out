@@ -1,0 +1,169 @@
+#! /usr/share/iverilog-0.9.7/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_6)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x1145070 .scope module, "tb" "tb" 2 3;
+ .timescale 0 0;
+v0x11753a0_0 .var "i0", 7 0;
+v0x1175420_0 .var "i1", 7 0;
+v0x11754f0_0 .var "i2", 7 0;
+v0x11755c0_0 .var "i3", 7 0;
+v0x1175690_0 .var "i4", 7 0;
+v0x1175760_0 .var "i5", 7 0;
+v0x11757e0_0 .var "i6", 7 0;
+v0x11758f0_0 .var "i7", 7 0;
+v0x1175970_0 .var "i8", 7 0;
+v0x11759f0_0 .var "s", 1 0;
+v0x1175a70_0 .net "y", 7 0, L_0x1176c40; 1 drivers
+S_0x1145800 .scope module, "dut" "cf" 2 7, 3 16, S_0x1145070;
+ .timescale 0 0;
+v0x11743d0_0 .net *"_s1", 0 0, L_0x11769c0; 1 drivers
+v0x1174450_0 .net *"_s3", 0 0, L_0x1176ab0; 1 drivers
+v0x11744d0_0 .net *"_s4", 7 0, L_0x1176b50; 1 drivers
+v0x1174570_0 .net "i0", 7 0, v0x11753a0_0; 1 drivers
+v0x1174620_0 .net "i1", 7 0, v0x1175420_0; 1 drivers
+v0x11746d0_0 .net "i2", 7 0, v0x11754f0_0; 1 drivers
+v0x1174790_0 .net "i3", 7 0, v0x11755c0_0; 1 drivers
+v0x1174840_0 .net "i4", 7 0, v0x1175690_0; 1 drivers
+v0x1174940_0 .net "i5", 7 0, v0x1175760_0; 1 drivers
+v0x11749c0_0 .net "i6", 7 0, v0x11757e0_0; 1 drivers
+v0x1174aa0_0 .net "i7", 7 0, v0x11758f0_0; 1 drivers
+v0x1174b20_0 .net "i8", 7 0, v0x1175970_0; 1 drivers
+v0x1174c10_0 .net "s", 1 0, v0x11759f0_0; 1 drivers
+v0x1174c90_0 .alias "y", 7 0, v0x1175a70_0;
+v0x1174d90_0 .net "y10", 7 0, L_0x1175fc0; 1 drivers
+v0x1174e60_0 .net "y11", 7 0, v0x11729f0_0; 1 drivers
+v0x1174d10_0 .net "y12", 7 0, L_0x1175e80; 1 drivers
+v0x1174fc0_0 .net "y13", 7 0, v0x1172690_0; 1 drivers
+v0x1174ee0_0 .net "y14", 7 0, L_0x11762a0; 1 drivers
+v0x11750e0_0 .net "y15", 7 0, L_0x1176920; 1 drivers
+v0x1175040_0 .net "y16", 7 0, L_0x11766d0; 1 drivers
+v0x1175210_0 .net "y17", 7 0, L_0x1176470; 1 drivers
+v0x1175160_0 .net "y9", 7 0, L_0x1175c20; 1 drivers
+L_0x11769c0 .part v0x11759f0_0, 1, 1;
+L_0x1176ab0 .part v0x11759f0_0, 0, 1;
+L_0x1176b50 .functor MUXZ 8, L_0x1176470, L_0x11766d0, L_0x1176ab0, C4<>;
+L_0x1176c40 .functor MUXZ 8, L_0x1176b50, L_0x1176920, L_0x11769c0, C4<>;
+S_0x1174030 .scope module, "x1" "max" 3 18, 3 12, S_0x1145800;
+ .timescale 0 0;
+v0x1174120_0 .net *"_s0", 0 0, L_0x1175af0; 1 drivers
+v0x11741a0_0 .alias "a", 7 0, v0x1174620_0;
+v0x1174240_0 .alias "b", 7 0, v0x1174b20_0;
+v0x11742f0_0 .alias "x", 7 0, v0x1175160_0;
+L_0x1175af0 .cmp/gt 8, v0x1175420_0, v0x1175970_0;
+L_0x1175c20 .functor MUXZ 8, v0x1175970_0, v0x1175420_0, L_0x1175af0, C4<>;
+S_0x1173cc0 .scope module, "x2" "max" 3 19, 3 12, S_0x1145800;
+ .timescale 0 0;
+v0x1173db0_0 .net *"_s0", 0 0, L_0x1175d50; 1 drivers
+v0x1173e30_0 .alias "a", 7 0, v0x11749c0_0;
+v0x1173f00_0 .alias "b", 7 0, v0x1175160_0;
+v0x1173f80_0 .alias "x", 7 0, v0x1174d10_0;
+L_0x1175d50 .cmp/gt 8, v0x11757e0_0, L_0x1175c20;
+L_0x1175e80 .functor MUXZ 8, L_0x1175c20, v0x11757e0_0, L_0x1175d50, C4<>;
+S_0x1173930 .scope module, "x3" "min" 3 20, 3 8, S_0x1145800;
+ .timescale 0 0;
+v0x1173a20_0 .net *"_s0", 0 0, L_0x1175f20; 1 drivers
+v0x1173ac0_0 .alias "a", 7 0, v0x1174840_0;
+v0x1173b60_0 .alias "b", 7 0, v0x11749c0_0;
+v0x1173be0_0 .alias "x", 7 0, v0x1174d90_0;
+L_0x1175f20 .cmp/gt 8, v0x11757e0_0, v0x1175690_0;
+L_0x1175fc0 .functor MUXZ 8, v0x11757e0_0, v0x1175690_0, L_0x1175f20, C4<>;
+S_0x1173560 .scope module, "x4" "min" 3 21, 3 8, S_0x1145800;
+ .timescale 0 0;
+v0x1173650_0 .net *"_s0", 0 0, L_0x1176170; 1 drivers
+v0x11736f0_0 .alias "a", 7 0, v0x1174b20_0;
+v0x1173790_0 .alias "b", 7 0, v0x1174e60_0;
+v0x1173860_0 .alias "x", 7 0, v0x1174ee0_0;
+L_0x1176170 .cmp/gt 8, v0x11729f0_0, v0x1175970_0;
+L_0x11762a0 .functor MUXZ 8, v0x11729f0_0, v0x1175970_0, L_0x1176170, C4<>;
+S_0x11731b0 .scope module, "x5" "min" 3 22, 3 8, S_0x1145800;
+ .timescale 0 0;
+v0x11732a0_0 .net *"_s0", 0 0, L_0x11763d0; 1 drivers
+v0x1173360_0 .alias "a", 7 0, v0x1174790_0;
+v0x1173400_0 .alias "b", 7 0, v0x1174ee0_0;
+v0x11734b0_0 .alias "x", 7 0, v0x1175210_0;
+L_0x11763d0 .cmp/gt 8, L_0x11762a0, v0x11755c0_0;
+L_0x1176470 .functor MUXZ 8, L_0x11762a0, v0x11755c0_0, L_0x11763d0, C4<>;
+S_0x1172e30 .scope module, "x6" "min" 3 23, 3 8, S_0x1145800;
+ .timescale 0 0;
+v0x1172f20_0 .net *"_s0", 0 0, L_0x11765a0; 1 drivers
+v0x1172fc0_0 .alias "a", 7 0, v0x1174fc0_0;
+v0x1173090_0 .alias "b", 7 0, v0x1174ee0_0;
+v0x1173130_0 .alias "x", 7 0, v0x1175040_0;
+L_0x11765a0 .cmp/gt 8, L_0x11762a0, v0x1172690_0;
+L_0x11766d0 .functor MUXZ 8, L_0x11762a0, v0x1172690_0, L_0x11765a0, C4<>;
+S_0x1172aa0 .scope module, "x7" "min" 3 24, 3 8, S_0x1145800;
+ .timescale 0 0;
+v0x1172b90_0 .net *"_s0", 0 0, L_0x1176880; 1 drivers
+v0x1172c30_0 .alias "a", 7 0, v0x1174d10_0;
+v0x1172cd0_0 .alias "b", 7 0, v0x1174fc0_0;
+v0x1172d80_0 .alias "x", 7 0, v0x11750e0_0;
+L_0x1176880 .cmp/gt 8, v0x1172690_0, L_0x1175e80;
+L_0x1176920 .functor MUXZ 8, v0x1172690_0, L_0x1175e80, L_0x1176880, C4<>;
+S_0x1172730 .scope module, "x8" "buff" 3 26, 3 2, S_0x1145800;
+ .timescale 0 0;
+v0x1172890_0 .alias "a", 7 0, v0x11746d0_0;
+v0x1172950_0 .alias "b", 7 0, v0x11749c0_0;
+v0x11729f0_0 .var "x", 7 0;
+E_0x1172820 .event edge, v0x1172890_0, v0x1172950_0;
+S_0x1145f90 .scope module, "x9" "buff" 3 27, 3 2, S_0x1145800;
+ .timescale 0 0;
+v0x114a510_0 .alias "a", 7 0, v0x1174d90_0;
+v0x11725f0_0 .alias "b", 7 0, v0x1174e60_0;
+v0x1172690_0 .var "x", 7 0;
+E_0x1148c60 .event edge, v0x114a510_0, v0x11725f0_0;
+    .scope S_0x1172730;
+T_0 ;
+    %wait E_0x1172820;
+    %load/v 8, v0x1172890_0, 8;
+    %load/v 16, v0x1172950_0, 8;
+    %or 8, 16, 8;
+    %ix/load 0, 8, 0;
+    %assign/v0 v0x11729f0_0, 5, 8;
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_0x1145f90;
+T_1 ;
+    %wait E_0x1148c60;
+    %load/v 8, v0x114a510_0, 8;
+    %load/v 16, v0x11725f0_0, 8;
+    %or 8, 16, 8;
+    %ix/load 0, 8, 0;
+    %assign/v0 v0x1172690_0, 5, 8;
+    %jmp T_1;
+    .thread T_1, $push;
+    .scope S_0x1145070;
+T_2 ;
+    %vpi_call 2 9 "$dumpfile", "dump.vcd";
+    %vpi_call 2 9 "$dumpvars";
+    %movi 8, 10, 5;
+T_2.0 %cmp/s 0, 8, 5;
+    %jmp/0xz T_2.1, 5;
+    %add 8, 1, 5;
+    %vpi_func 2 11 "$random", 13, 32;
+    %set/v v0x11755c0_0, 13, 8;
+    %set/v v0x11754f0_0, 21, 8;
+    %set/v v0x1175420_0, 29, 8;
+    %set/v v0x11753a0_0, 37, 8;
+    %vpi_func 2 12 "$random", 13, 32;
+    %set/v v0x11758f0_0, 13, 8;
+    %set/v v0x11757e0_0, 21, 8;
+    %set/v v0x1175760_0, 29, 8;
+    %set/v v0x1175690_0, 37, 8;
+    %vpi_func 2 13 "$random", 13, 32;
+    %set/v v0x1175970_0, 13, 8;
+    %vpi_func 2 14 "$random", 13, 32;
+    %set/v v0x11759f0_0, 13, 2;
+    %vpi_call 2 15 "$display", "i0 = %d,i1=%d, i2=%d, i3=%d, i4=%d, i5=%d, i6=%d, i7=%d, i8=%d, s=%d, y=%d", v0x11753a0_0, v0x1175420_0, v0x11754f0_0, v0x11755c0_0, v0x1175690_0, v0x1175760_0, v0x11757e0_0, v0x11758f0_0, v0x1175970_0, v0x11759f0_0, v0x1175a70_0;
+    %jmp T_2.0;
+T_2.1 ;
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "testbench.sv";
+    "design.sv";
